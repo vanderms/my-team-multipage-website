@@ -10,7 +10,7 @@ export default function HeroSection() {
         </div>
         <div className="hero-bottom-pattern"></div>
         <div
-          className={`inner-container grid grid-cols-1 gap-5 md:gap-6 xl:grid-cols-[1fr,27.8125rem]`}
+          className={`inner-container relative z-10 grid grid-cols-1 gap-5 md:gap-6 xl:grid-cols-[1fr,27.8125rem]`}
         >
           <h1 id={title} className="title-xl text-center xl:text-left">
             Find the <br /> best <strong className="text-secondary"> talent</strong>
