@@ -5,7 +5,9 @@ export default function HeroSection() {
   return (
     <section aria-labelledby={title} className="mt-20  md:mt-[7rem] xl:mt-[8.0625rem]">
       <div className="relative outer-container pb-[12.5rem] md:pb-[16rem] xl:pb-[15.625rem]">
-        <div className="hero-side-pattern"></div>
+        <div className="hero-side-pattern-wrapper">
+          <div className="hero-side-pattern"></div>
+        </div>
         <div className="hero-bottom-pattern"></div>
         <div
           className={`inner-container grid grid-cols-1 gap-5 md:gap-6 xl:grid-cols-[1fr,27.8125rem]`}

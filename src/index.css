@@ -182,7 +182,26 @@
     }
   }
 
-  .hero-side-pattern {
+  .hero-side-pattern-wrapper {
     @apply hidden;
+  }
+
+  @media screen(xl) {
+    .hero-side-pattern-wrapper {
+      @apply block absolute left-0 top-0 overflow-hidden;
+      width: 6.25rem;
+    }
+
+    .hero-side-pattern {
+      @apply w-full;
+      padding-bottom: 200%;
+    }
+
+    .hero-side-pattern::before {
+      @apply absolute h-full top-0 right-0 block bg-no-repeat bg-center bg-contain;
+      content: "";
+      width: 200%;
+      background-image: url(/patterns/bg-pattern-home-1.svg);
+    }
   }
 }
