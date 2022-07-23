@@ -7,8 +7,11 @@ import AvatarArthur from "@/assets/avatar-arthur.jpg";
 export default function TestimonialsSection() {
   const title = useId();
   return (
-    <section aria-labelledby={title} className="bg-primary-700">
-      <div className="relative outer-container py-[8.75rem] testimonials-pattern md:py-[6.25rem] xl:py-[8.75rem]">
+    <section
+      aria-labelledby={title}
+      className="relative testimonials-pattern bg-primary-700"
+    >
+      <div className="relative outer-container py-[8.75rem]  md:py-[6.25rem] xl:py-[8.75rem]">
         <div className="inner-container md:px-14 xl:px-0">
           <h2 id={title} className="title-md text-center max-w-[58.25rem] mx-auto">
             Delivering real results for top companies. Some of our{" "}

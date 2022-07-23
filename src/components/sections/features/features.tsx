@@ -7,11 +7,11 @@ import IconCog from "@/assets/icon-cog.svg";
 export default function FeaturesSection() {
   const title = useId();
   return (
-    <section aria-labelledby={title} className="bg-neutral-800">
+    <section aria-labelledby={title} className="relative bg-neutral-800">
+      <div className="features-pattern-wrapper">
+        <div className="features-pattern"></div>
+      </div>
       <div className="py-16 relative outer-container md:py-[6.25rem] xl:py-[8.75rem]">
-        <div className="features-pattern-wrapper">
-          <div className="features-pattern"></div>
-        </div>
         <div className="inner-container md:px-14 xl:grid xl:grid-cols-[27.8125rem,33.75rem] xl:justify-between xl:px-0">
           <h2 id={title} className="title-md mr-24 xl:mr-0">
             <span className="block bg-secondary w-12 h-1 mb-8"></span>
