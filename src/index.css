@@ -205,7 +205,7 @@
     }
   }
 
-  .features-pattern-wrapper{
+  .features-pattern-wrapper {
     @apply block absolute right-0 top-0 overflow-hidden;
     width: 6.25rem;
   }
@@ -215,18 +215,33 @@
     padding-bottom: 244%;
   }
 
-  .features-pattern::before{
-     @apply absolute h-full top-0 left-0 block bg-no-repeat bg-center bg-contain;
-     content: '';
-     width: 200%;
-     background-image: url(/patterns/bg-pattern-home-3.svg);
+  .features-pattern::before {
+    @apply absolute h-full top-0 left-0 block bg-no-repeat bg-center bg-contain;
+    content: "";
+    width: 200%;
+    background-image: url(/patterns/bg-pattern-home-3.svg);
   }
 
-  @media screen(xl){
-    .features-pattern-wrapper{
+  @media screen(xl) {
+    .features-pattern-wrapper {
       @apply bottom-0;
       top: auto;
-      
     }
+  }
+
+  .testimonials-pattern::before{
+    @apply absolute block bg-no-repeat bg-contain bg-center top-0 left-0;
+    content: '';
+    width: 9.1875rem;
+    height: 6.25rem;
+    background-image: url(/patterns/bg-pattern-home-4-about-3.svg);
+  }
+
+  .testimonials-pattern::after{
+    @apply absolute block bg-no-repeat bg-contain bg-center bottom-0 right-0;
+    content: '';
+    width: 12.5rem;
+    height: 6.25rem;
+    background-image: url(/patterns/bg-pattern-home-5.svg);
   }
 }
