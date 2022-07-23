@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { ActionLink } from "@/components/buttons/action-link/action-link";
 
 export default function Navbar() {
   const [sidebar, setSidebar] = useState({ open: false });
@@ -50,13 +51,13 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <Link
+          <ActionLink
             to="/contact"
             onClick={closeSidebar}
-            className="mt-8 border-2 border-neutral-50 text-[1.125rem] rounded-full w-[10rem] h-[3rem] grid place-items-center md:mt-0 xl:w-[9.5625rem]"
+            className="mt-8 border-neutral-50 md:mt-0"
           >
             contact us
-          </Link>
+          </ActionLink>
         </motion.div>
       </div>
     </nav>

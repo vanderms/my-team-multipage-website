@@ -229,19 +229,27 @@
     }
   }
 
-  .testimonials-pattern::before{
+  .testimonials-pattern::before {
     @apply absolute block bg-no-repeat bg-contain bg-center top-0 left-0;
-    content: '';
+    content: "";
     width: 9.1875rem;
     height: 6.25rem;
     background-image: url(/patterns/bg-pattern-home-4-about-3.svg);
   }
 
-  .testimonials-pattern::after{
+  .testimonials-pattern::after {
     @apply absolute block bg-no-repeat bg-contain bg-center bottom-0 right-0;
-    content: '';
+    content: "";
     width: 12.5rem;
     height: 6.25rem;
     background-image: url(/patterns/bg-pattern-home-5.svg);
+  }
+
+  .call-to-action-pattern::before {
+    @apply absolute block bg-no-repeat bg-contain bg-center bottom-0 left-0;
+    content: "";
+    width: 12.5rem;
+    height: 7.625rem;
+    background-image: url(/patterns/bg-pattern-home-6-about-5.svg);
   }
 }
