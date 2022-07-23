@@ -21,7 +21,7 @@ export default function Navbar() {
         </button>
         <div
           onClick={closeSidebar}
-          className={`fixed z-[98] w-full top-0 left-0 md:hidden ${
+          className={`fixed z-[98] w-full top-0 left-0 md:hidden bg-[#000] opacity-50 ${
             sidebar.open ? "h-screen" : "h-0"
           }`}
         ></div>
@@ -55,7 +55,7 @@ export default function Navbar() {
             onClick={closeSidebar}
             className="mt-8 border-2 border-neutral-50 text-[1.125rem] rounded-full w-[10rem] h-[3rem] grid place-items-center md:mt-0 xl:w-[9.5625rem]"
           >
-            Contact Us
+            contact us
           </Link>
         </motion.div>
       </div>
