@@ -36,7 +36,7 @@ export default function Navbar() {
             <MdClose className="scale-125" />
           </button>
         </div>
-        <div className="navbar-pattern"></div>
+        <div className="navbar-pattern md:hidden"></div>
         <ul className="mt-10 flex flex-col text-[1.125rem] gap-6 md:flex-grow md:flex-row md:mt-0 md:ml-12">
           <li>
             <Link to="/" onClick={closeSidebar}>
