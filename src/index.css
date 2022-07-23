@@ -204,4 +204,29 @@
       background-image: url(/patterns/bg-pattern-home-1.svg);
     }
   }
+
+  .features-pattern-wrapper{
+    @apply block absolute right-0 top-0 overflow-hidden;
+    width: 6.25rem;
+  }
+
+  .features-pattern {
+    @apply w-full;
+    padding-bottom: 244%;
+  }
+
+  .features-pattern::before{
+     @apply absolute h-full top-0 left-0 block bg-no-repeat bg-center bg-contain;
+     content: '';
+     width: 200%;
+     background-image: url(/patterns/bg-pattern-home-3.svg);
+  }
+
+  @media screen(xl){
+    .features-pattern-wrapper{
+      @apply bottom-0;
+      top: auto;
+      
+    }
+  }
 }
