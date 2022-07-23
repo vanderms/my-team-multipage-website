@@ -9,12 +9,12 @@ module.exports = {
     screens: {
       sm: "22.5rem",
       md: "42.5rem",
-      xl: "74rem"
+      xl: "70rem"
     },
 
     colors: {
       "primary": "var(--primary)",
-      "accent": "var(--accent)",
+      "secondary": "var(--secondary)",
       "primary-300": "var(--primary-300)",
       "primary-500": "var(--primary-500)",
       "primary-700": "var(--primary-700)",

@@ -13,7 +13,7 @@
 
   :root {
     --primary: #014e56;
-    --accent: #f67e7e;
+    --secondary: #f67e7e;
     --primary-300: #79c8c7;
     --primary-500: #2c6269;
     --primary-700: #004047;
@@ -24,28 +24,32 @@
 }
 
 @layer components {
-  .inner-ctn {
-    padding-inline: 6.4%;
+  .inner-container {
+    @apply mx-auto;
+    max-width: 87.2%;
+  }
+
+  .outer-container {
+    @apply mx-auto;
   }
 
   @media screen(md) {
-    .inner-ctn {
-      padding-inline: 5.2083333%;
+    .inner-container {
+      max-width: 89.6%;
     }
 
-    .outer-ctn {
-      @apply grid grid-cols-1;
-      padding-inline: calc(50% - 28.75rem);
+    .outer-container {
+      max-width: 48rem;
     }
   }
 
   @media screen(xl) {
-    .inner-ctn {
-      padding-inline: calc(50% - 550px);
+    .inner-container {
+      max-width: 69.375rem;
     }
 
-    .outer-ctn {
-      padding-inline: calc(50% - 45rem);
+    .outer-container {
+      max-width: 90rem;
     }
   }
 }
@@ -157,5 +161,28 @@
     width: 12.5rem;
     height: 12.5rem;
     background-image: url(/patterns/bg-pattern-about-1-mobile-nav-1.svg);
+  }
+
+  .hero-bottom-pattern {
+    @apply absolute mx-auto left-0 right-0 bottom-0;
+    width: min(95.47vw, 22.375rem);
+  }
+
+  .hero-bottom-pattern::before {
+    @apply block bg-no-repeat bg-center bg-contain w-full;
+    content: "";
+    padding-bottom: 27.93%;
+    background-image: url(/patterns/bg-pattern-home-2.svg);
+  }
+
+  @media screen(xl) {
+    .hero-bottom-pattern {
+      margin-left: auto;
+      margin-right: calc(50% - 34.375rem);
+    }
+  }
+
+  .hero-side-pattern {
+    @apply hidden;
   }
 }
