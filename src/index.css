@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Livvic", sans-serif;
+  }
+
+  body {
+    @apply bg-primary text-neutral-50 min-h-screen;
+  }
+
+  :root {
+    --primary: #014e56;
+    --accent: #f67e7e;
+    --primary-300: #79c8c7;
+    --primary-500: #2c6269;
+    --primary-700: #004047;
+    --neutral-50: #ffffff;
+    --neutral-800: #012f34;
+    --neutral-850: #002529;
+  }
+}
+
+@layer components {
+  .inner-ctn {
+    padding-inline: 6.4%;
+  }
+
+  @media screen(md) {
+    .inner-ctn {
+      padding-inline: 5.2083333%;
+    }
+
+    .outer-ctn {
+      @apply grid grid-cols-1;
+      padding-inline: calc(50% - 28.75rem);
+    }
+  }
+
+  @media screen(xl) {
+    .inner-ctn {
+      padding-inline: calc(50% - 550px);
+    }
+
+    .outer-ctn {
+      padding-inline: calc(50% - 45rem);
+    }
+  }
+}
+
+@layer components {
+  .title-xl {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  @media screen(md) {
+    .title-xl {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  @media screen(xl) {
+    .title-xl {
+      font-size: 6.25rem;
+      line-height: 6.25rem;
+    }
+  }
+
+  .title-lg {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  @media screen(md) {
+    .title-lg {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  @media screen(xl) {
+    .title-lg {
+      font-size: 4rem;
+      line-height: 6.25rem;
+    }
+  }
+
+  .title-md {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  @media screen(md) {
+    .title-md {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+
+  @media screen(xl) {
+    .title-md {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  }
+
+  .title-sm {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .body-xl {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.75rem;
+  }
+
+  @media screen(md) {
+    .body-xl {
+      font-size: 0.9375rem;
+      line-height: 1.75rem;
+    }
+  }
+
+  @media screen(xl) {
+    .body-xl {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+  }
+
+  .body-md {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+}
+
+@layer components {
+  .navbar-pattern {
+    @apply absolute bottom-0 right-0 overflow-hidden;
+    width: 6.25rem;
+    height: 12.5rem;
+  }
+
+  .navbar-pattern::before {
+    @apply absolute bg-no-repeat bg-center bg-contain bottom-0 left-0;
+    content: "";
+    width: 12.5rem;
+    height: 12.5rem;
+    background-image: url(/patterns/bg-pattern-about-1-mobile-nav-1.svg);
+  }
+}
