@@ -259,4 +259,20 @@
     height: 7.625rem;
     background-image: url(/patterns/bg-pattern-home-6-about-5.svg);
   }
+
+  .about-pattern::before {
+    @apply absolute block bg-no-repeat bg-contain bg-center;
+    content: '';
+    width: 12.5rem;
+    height: 12.5rem;
+    bottom: -6.25rem;
+    right: -6.25rem;
+    background-image: url(/patterns/bg-pattern-about-1-mobile-nav-1.svg);
+  }
+
+  @media screen(md){
+    .about-pattern::before{
+      bottom: 0;
+    }
+  }
 }
