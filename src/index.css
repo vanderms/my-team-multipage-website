@@ -290,7 +290,7 @@
     background-image: url(/patterns/bg-pattern-about-2-contact-1.svg);
   }
 
-   @media screen(md) {
+  @media screen(md) {
     .team-section-pattern::before {
       top: 0;
     }
@@ -300,7 +300,29 @@
     @apply absolute block bg-no-repeat bg-contain bg-center bottom-0 right-0;
     content: "";
     width: 9.1875rem;
-    height: 6.5rem;   
+    height: 6.5rem;
     background-image: url(/patterns/bg-pattern-home-4-about-3.svg);
+  }
+
+  .clients-section-pattern::before {
+    @apply absolute block bg-no-repeat bg-contain bg-center;
+    content: "";
+    top: -6.25rem;
+    left: -6.25rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    background-image: url(/patterns/bg-pattern-about-4.svg);
+  }
+
+  @media screen(md) {
+    .clients-section-pattern::before {
+      left: 0;
+    }
+  }
+
+  @media screen(xl) {
+    .clients-section-pattern::before {
+      top: 0;
+    }
   }
 }
