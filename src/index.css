@@ -28,6 +28,10 @@
     --neutral-800: #012f34;
     --neutral-850: #002529;
   }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
 }
 
 @layer components {
@@ -262,7 +266,7 @@
 
   .about-pattern::before {
     @apply absolute block bg-no-repeat bg-contain bg-center;
-    content: '';
+    content: "";
     width: 12.5rem;
     height: 12.5rem;
     bottom: -6.25rem;
@@ -270,9 +274,33 @@
     background-image: url(/patterns/bg-pattern-about-1-mobile-nav-1.svg);
   }
 
-  @media screen(md){
-    .about-pattern::before{
+  @media screen(md) {
+    .about-pattern::before {
       bottom: 0;
     }
+  }
+
+  .team-section-pattern::before {
+    @apply absolute block bg-no-repeat bg-contain bg-center;
+    content: "";
+    width: 12.5rem;
+    height: 12.5rem;
+    top: -6.25rem;
+    left: -6.25rem;
+    background-image: url(/patterns/bg-pattern-about-2-contact-1.svg);
+  }
+
+   @media screen(md) {
+    .team-section-pattern::before {
+      top: 0;
+    }
+  }
+
+  .team-section-pattern::after {
+    @apply absolute block bg-no-repeat bg-contain bg-center bottom-0 right-0;
+    content: "";
+    width: 9.1875rem;
+    height: 6.5rem;   
+    background-image: url(/patterns/bg-pattern-home-4-about-3.svg);
   }
 }
