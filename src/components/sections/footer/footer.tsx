@@ -12,7 +12,7 @@ export default function Footer() {
       `}
       >
         <div>
-          <Link to="/" aria-label="homepage" className="flex w-24 h-6">
+          <Link to="/" aria-label="homepage" className="flex w-24 h-6 xl:w-[10rem] xl:h-10">
             <img src={Logo} alt="" />
           </Link>
           <ul className="mt-6 flex gap-6 md:mt-12">
