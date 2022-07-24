@@ -41,12 +41,12 @@ export default function Navbar() {
           <div className="navbar-pattern md:hidden"></div>
           <ul className="mt-10 flex flex-col text-[1.125rem] gap-6 md:flex-grow md:flex-row md:mt-0 md:ml-12">
             <li>
-              <Link to="/" onClick={closeSidebar}>
+              <Link to="/" onClick={closeSidebar} className="md:hover:text-secondary">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" onClick={closeSidebar}>
+              <Link to="/about" onClick={closeSidebar} className="md:hover:text-secondary">
                 About
               </Link>
             </li>

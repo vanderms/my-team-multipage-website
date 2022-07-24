@@ -17,10 +17,14 @@ export default function Footer() {
           </Link>
           <ul className="mt-6 flex gap-6 md:mt-12">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="md:hover:text-secondary">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/">About</Link>
+              <Link to="/" className="md:hover:text-secondary">
+                About
+              </Link>
             </li>
           </ul>
         </div>

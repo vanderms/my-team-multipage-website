@@ -17,7 +17,7 @@ export default function TestimonialsSection() {
             Delivering real results for top companies. Some of our{" "}
             <strong className="text-primary-300">success stories.</strong>
           </h2>
-          <ul className="mt-12 flex flex-col gap-12 xl:flex-row xl:gap-[1.875rem] xl:mt-14">
+          <ul className="mt-12 flex flex-col gap-12 xl:flex-row xl:gap-[1.875rem] xl:mt-14 xl:pb-[0.6875rem]">
             <li>
               <TestimonialCard
                 name="Kady Baker"
