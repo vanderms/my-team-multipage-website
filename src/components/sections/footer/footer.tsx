@@ -25,7 +25,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <address className="mt-6 text-center md:text-left justify-self-end md:mt-0 xl:justify-self-start">
+        <address className="mt-6 text-center md:text-left md:justify-self-end md:mt-0 xl:justify-self-start">
           987 Hillcrest Lane
           <br />
           Irvine, CA
