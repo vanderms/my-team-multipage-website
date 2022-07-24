@@ -14,13 +14,13 @@ interface TeamCardProps {
 }
 
 export const TeamCard: React.FC<TeamCardProps> = (props) => {
-  const [display, setDisplay] = useState<"quotation" | "picture">("picture");
+  const [rotate, setRotate] = useState<number>(0);
   return (
     <article>
       <motion.div
         className="relative [transform-style:preserve-3d]"
         animate={{
-          rotateY: display === "picture" ? "0deg" : "180deg",
+          rotateY: `${rotate}deg`,
         }}
         transition={{ duration: 0.5 }}
       >
@@ -75,14 +75,14 @@ export const TeamCard: React.FC<TeamCardProps> = (props) => {
       <button
         className={`relative mt-[-1.75rem] mx-auto w-14 h-14 rounded-full grid place-items-center text-neutral-800
         ${
-          display === "picture"
+          rotate % 360 === 0
             ? "bg-secondary hover:bg-primary-300"
             : "hover:bg-secondary bg-primary-300"
         }
         `}
-        onClick={() => setDisplay((prev) => (prev === "picture" ? "quotation" : "picture"))}
+        onClick={() => setRotate((prev) => prev + 180)}
       >
-        {display === "picture" ? (
+        {rotate % 360 === 0 ? (
           <BiPlus className="w-5 h-5" />
         ) : (
           <MdClose className="w-5 h-5" />
