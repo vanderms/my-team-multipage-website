@@ -36,7 +36,7 @@ export default function Footer() {
           <br />
         </address>
         <div
-          className={`md:mt-8 md:col-start-1 md:col-span-2 md:w-full md:flex md:justify-between
+          className={`flex flex-col items-center md:mt-8 md:col-start-1 md:col-span-2 md:flex-row md:w-full md:justify-between
           xl:col-start-auto xl:col-auto xl:flex-col xl:mt-0
         `}
         >
