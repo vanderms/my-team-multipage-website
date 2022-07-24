@@ -11,6 +11,13 @@
     @apply bg-primary text-neutral-50 min-h-screen;
   }
 
+  address {
+    @apply font-semibold opacity-60;
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+
   :root {
     --primary: #014e56;
     --secondary: #f67e7e;
