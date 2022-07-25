@@ -54,7 +54,7 @@ export default function Navbar() {
           <ActionLink
             to="/contact"
             onClick={closeSidebar}
-            className="mt-8 border-neutral-50 md:mt-0"
+            className="mt-8 border-neutral-50 md:mt-0 hover:bg-neutral-50 hover:text-neutral-850"
           >
             contact us
           </ActionLink>

@@ -17,7 +17,7 @@ export default function CallToActionSection() {
           <h2 id={title} className="title-md text-center text-neutral-800 md:text-left">
             Ready to get started?
           </h2>
-          <ActionLink to="/contact" className="border-neutral-800 text-neutral-800">
+          <ActionLink to="/contact" className="border-neutral-800 text-neutral-800 hover:text-neutral-50 hover:bg-neutral-800">
             contact us
           </ActionLink>
         </div>
