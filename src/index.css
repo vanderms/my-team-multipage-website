@@ -325,4 +325,30 @@
       top: 0;
     }
   }
+
+  .contact-section-pattern::after {
+    @apply absolute block bg-no-repeat bg-contain bg-center;
+    content: "";
+    bottom: -7.0313rem;
+    right: -6.25rem;
+    width: 12.5625rem;
+    height: 14.0625rem;
+    background-image: url(/patterns/bg-pattern-contact-2.svg);
+  }
+
+  @media screen(xl) {
+    .contact-section-pattern::before {
+      @apply absolute block bg-no-repeat bg-contain bg-center;
+      content: "";
+      left: -6.25rem;
+      top: 7.5rem;
+      width: 12.5rem;
+      height: 12.5rem;
+      background-image: url(/patterns/bg-pattern-about-2-contact-1.svg);
+    }
+    
+    .contact-section-pattern::after {
+      bottom: 0;
+    }
+  }
 }

@@ -5,14 +5,13 @@ import IconCog from "@/assets/icon-cog.svg";
 export default function ContactCard() {
   return (
     <article>
-      <h2 className="text-[2rem] leading-[3rem] text-secondary text-center">
+      <h2 className="text-[2rem] leading-[3rem] text-secondary text-center xl:text-left">
         Ask us about
       </h2>
       <ul
-        className={`mt-10 flex flex-col gap-6
+        className={`mt-10 flex flex-col gap-6 md:gap-2 xl:mt-8
         text-[1.125rem] leading-[1.75rem] font-bold 
         [&>li]:flex [&>li]:gap-6 [&>li]:items-center
-      
       `}
       >
         <li>
